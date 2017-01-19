@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule /css/([^\/]+).css$ css/$1.css [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /index.php [L]
